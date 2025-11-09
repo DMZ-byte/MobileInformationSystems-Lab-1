@@ -63,16 +63,16 @@ class _MyHomePageState extends State<MyHomePage> {
     }),
       bottomNavigationBar: BottomAppBar(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center, // Centers the content horizontally
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               decoration: BoxDecoration(
-                color: Colors.red, // The box color
-                borderRadius: BorderRadius.circular(8.0), // Rounded corners for the boxy look
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(8.0),
               ),
               child: Text(
-                '${allExams.length}', // Your counter value
+                '${allExams.length}',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

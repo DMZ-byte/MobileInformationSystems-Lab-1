@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; // Import is required for Scaffold and Material widgets
+import 'package:flutter/material.dart';
 import '../models/exam.dart';
 
 class ExamDetailScreen extends StatelessWidget {
@@ -17,12 +17,10 @@ class ExamDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 1. Wrap the entire screen content in a Scaffold
     return Scaffold(
       appBar: AppBar(
         title: Text(exam.name),
       ),
-      // 2. Wrap the layout logic in a Padding for visual space
       body:
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,11 +36,11 @@ class ExamDetailScreen extends StatelessWidget {
                   fontSize: 16,
                   color: Colors.black,
                 ),
-                maxLines: 2, // Allow more lines for long names
+                maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),
               Text(
-                // Better formatting for DateTime
+
                 'Date: ${exam.timeOfExam.year}-${exam.timeOfExam.month}-${exam.timeOfExam.day}\nTime: ${exam.timeOfExam.hour}:${exam.timeOfExam.minute.toString().padLeft(2, '0')}',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
@@ -58,7 +56,7 @@ class ExamDetailScreen extends StatelessWidget {
               ),
               Text(
                 exam.rooms.join(", "),
-                maxLines: 2, // Allow rooms to wrap if needed
+                maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),
             ],

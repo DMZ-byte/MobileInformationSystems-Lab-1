@@ -13,4 +13,3 @@ List<Exam> allExams = [
   Exam(name: 'Бази на податоци', timeOfExam: DateTime(2025,5,20,11), rooms: ['215','118','200B']),
 
 ];
-// Example inside a StatefulWidget's State class:
